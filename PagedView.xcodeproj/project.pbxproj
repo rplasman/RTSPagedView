@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55D33A621389C50900245167 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D33A611389C50900245167 /* UIKit.framework */; };
+		55D33A641389C50900245167 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D33A631389C50900245167 /* Foundation.framework */; };
+		55D33A661389C50900245167 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D33A651389C50900245167 /* CoreGraphics.framework */; };
+		55D33A6C1389C50900245167 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55D33A6A1389C50900245167 /* InfoPlist.strings */; };
+		55D33A6F1389C50900245167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D33A6E1389C50900245167 /* main.m */; };
+		55D33A721389C50900245167 /* PagedViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D33A711389C50900245167 /* PagedViewAppDelegate.m */; };
+		55D33A751389C50900245167 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55D33A731389C50900245167 /* MainWindow.xib */; };
+		55D33A781389C50900245167 /* PagedViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D33A771389C50900245167 /* PagedViewViewController.m */; };
+		55D33A7B1389C50900245167 /* PagedViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55D33A791389C50900245167 /* PagedViewViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55D33A5D1389C50900245167 /* PagedView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagedView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55D33A611389C50900245167 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		55D33A631389C50900245167 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		55D33A651389C50900245167 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		55D33A691389C50900245167 /* PagedView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PagedView-Info.plist"; sourceTree = "<group>"; };
+		55D33A6B1389C50900245167 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		55D33A6D1389C50900245167 /* PagedView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PagedView-Prefix.pch"; sourceTree = "<group>"; };
+		55D33A6E1389C50900245167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55D33A701389C50900245167 /* PagedViewAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagedViewAppDelegate.h; sourceTree = "<group>"; };
+		55D33A711389C50900245167 /* PagedViewAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagedViewAppDelegate.m; sourceTree = "<group>"; };
+		55D33A741389C50900245167 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		55D33A761389C50900245167 /* PagedViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagedViewViewController.h; sourceTree = "<group>"; };
+		55D33A771389C50900245167 /* PagedViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagedViewViewController.m; sourceTree = "<group>"; };
+		55D33A7A1389C50900245167 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PagedViewViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55D33A5A1389C50900245167 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55D33A621389C50900245167 /* UIKit.framework in Frameworks */,
+				55D33A641389C50900245167 /* Foundation.framework in Frameworks */,
+				55D33A661389C50900245167 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55D33A521389C50900245167 = {
+			isa = PBXGroup;
+			children = (
+				55D33A671389C50900245167 /* PagedView */,
+				55D33A601389C50900245167 /* Frameworks */,
+				55D33A5E1389C50900245167 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55D33A5E1389C50900245167 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55D33A5D1389C50900245167 /* PagedView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55D33A601389C50900245167 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55D33A611389C50900245167 /* UIKit.framework */,
+				55D33A631389C50900245167 /* Foundation.framework */,
+				55D33A651389C50900245167 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55D33A671389C50900245167 /* PagedView */ = {
+			isa = PBXGroup;
+			children = (
+				55D33A701389C50900245167 /* PagedViewAppDelegate.h */,
+				55D33A711389C50900245167 /* PagedViewAppDelegate.m */,
+				55D33A731389C50900245167 /* MainWindow.xib */,
+				55D33A761389C50900245167 /* PagedViewViewController.h */,
+				55D33A771389C50900245167 /* PagedViewViewController.m */,
+				55D33A791389C50900245167 /* PagedViewViewController.xib */,
+				55D33A681389C50900245167 /* Supporting Files */,
+			);
+			path = PagedView;
+			sourceTree = "<group>";
+		};
+		55D33A681389C50900245167 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55D33A691389C50900245167 /* PagedView-Info.plist */,
+				55D33A6A1389C50900245167 /* InfoPlist.strings */,
+				55D33A6D1389C50900245167 /* PagedView-Prefix.pch */,
+				55D33A6E1389C50900245167 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55D33A5C1389C50900245167 /* PagedView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55D33A7E1389C50900245167 /* Build configuration list for PBXNativeTarget "PagedView" */;
+			buildPhases = (
+				55D33A591389C50900245167 /* Sources */,
+				55D33A5A1389C50900245167 /* Frameworks */,
+				55D33A5B1389C50900245167 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagedView;
+			productName = PagedView;
+			productReference = 55D33A5D1389C50900245167 /* PagedView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55D33A541389C50900245167 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Taplicity;
+			};
+			buildConfigurationList = 55D33A571389C50900245167 /* Build configuration list for PBXProject "PagedView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 55D33A521389C50900245167;
+			productRefGroup = 55D33A5E1389C50900245167 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55D33A5C1389C50900245167 /* PagedView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55D33A5B1389C50900245167 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55D33A6C1389C50900245167 /* InfoPlist.strings in Resources */,
+				55D33A751389C50900245167 /* MainWindow.xib in Resources */,
+				55D33A7B1389C50900245167 /* PagedViewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55D33A591389C50900245167 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55D33A6F1389C50900245167 /* main.m in Sources */,
+				55D33A721389C50900245167 /* PagedViewAppDelegate.m in Sources */,
+				55D33A781389C50900245167 /* PagedViewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		55D33A6A1389C50900245167 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55D33A6B1389C50900245167 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		55D33A731389C50900245167 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55D33A741389C50900245167 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		55D33A791389C50900245167 /* PagedViewViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55D33A7A1389C50900245167 /* en */,
+			);
+			name = PagedViewViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55D33A7C1389C50900245167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		55D33A7D1389C50900245167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		55D33A7F1389C50900245167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PagedView/PagedView-Prefix.pch";
+				INFOPLIST_FILE = "PagedView/PagedView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		55D33A801389C50900245167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PagedView/PagedView-Prefix.pch";
+				INFOPLIST_FILE = "PagedView/PagedView-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55D33A571389C50900245167 /* Build configuration list for PBXProject "PagedView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55D33A7C1389C50900245167 /* Debug */,
+				55D33A7D1389C50900245167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55D33A7E1389C50900245167 /* Build configuration list for PBXNativeTarget "PagedView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55D33A7F1389C50900245167 /* Debug */,
+				55D33A801389C50900245167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55D33A541389C50900245167 /* Project object */;
+}
