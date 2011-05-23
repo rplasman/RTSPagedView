@@ -37,12 +37,12 @@
 @interface RTSPagedView : UIScrollView
 
 @property (nonatomic, assign) IBOutlet id <RTSPagedViewDelegate> delegate;
-@property (nonatomic, assign) NSInteger currentPage;
+@property (nonatomic, assign) NSUInteger currentPage;
 @property (nonatomic, readonly) NSUInteger numberOfPages;
 @property (nonatomic, assign) BOOL continuous;
 
 - (UIView *)dequeueReusableViewWithTag:(NSInteger)tag;
-- (UIView *)viewForPageAtIndex:(NSInteger)index;
+- (UIView *)viewForPageAtIndex:(NSUInteger)index;
 - (void)scrollToPageAtIndex:(NSUInteger)index animated:(BOOL)animated;
 - (void)reloadData;
 
@@ -50,11 +50,11 @@
 
 @protocol RTSPagedViewDelegate <UIScrollViewDelegate>
 
-- (NSInteger)numberOfPagesInPagedView:(RTSPagedView *)pagedView;
-- (UIView *)pagedView:(RTSPagedView *)pagedView viewForPageAtIndex:(NSInteger)index;
+- (NSUInteger)numberOfPagesInPagedView:(RTSPagedView *)pagedView;
+- (UIView *)pagedView:(RTSPagedView *)pagedView viewForPageAtIndex:(NSUInteger)index;
 
 @optional
 
-- (void)pagedView:(RTSPagedView *)pagedView didScrollToPageAtIndex:(NSInteger)index;
+- (void)pagedView:(RTSPagedView *)pagedView didScrollToPageAtIndex:(NSUInteger)index;
 
 @end

@@ -71,7 +71,7 @@
 	[super setDelegate:delegate];
 }
 
-- (void)setCurrentPage:(NSInteger)currentPage
+- (void)setCurrentPage:(NSUInteger)currentPage
 {
 	if (_currentPage == currentPage) {
 		return;
@@ -240,7 +240,7 @@
 	return point;
 }
 
-- (UIView *)viewForPageAtIndex:(NSInteger)index
+- (UIView *)viewForPageAtIndex:(NSUInteger)index
 {
 	UIView *view = [_views objectAtIndex:index];
 	

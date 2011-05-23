@@ -26,12 +26,12 @@
 
 #pragma mark - Paged view delegate
 
-- (NSInteger)numberOfPagesInPagedView:(RTSPagedView *)pagedView
+- (NSUInteger)numberOfPagesInPagedView:(RTSPagedView *)pagedView
 {
 	return [_items count];
 }
 
-- (UIView *)pagedView:(RTSPagedView *)pagedView viewForPageAtIndex:(NSInteger)index
+- (UIView *)pagedView:(RTSPagedView *)pagedView viewForPageAtIndex:(NSUInteger)index
 {
 	// Making use of Oliver Drobnik's DTLazyImageView for asynchronous image loading
 	DTLazyImageView *imageView = (DTLazyImageView *) [pagedView dequeueReusableViewWithTag:0];
@@ -50,7 +50,7 @@
 	return imageView;
 }
 
-- (void)pagedView:(RTSPagedView *)pagedView didScrollToPageAtIndex:(NSInteger)index
+- (void)pagedView:(RTSPagedView *)pagedView didScrollToPageAtIndex:(NSUInteger)index
 {
 	// Optional
 }
