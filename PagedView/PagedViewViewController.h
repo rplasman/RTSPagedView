@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PagedViewViewController : UIViewController {
-    
-}
+@class RTSPagedView;
+
+@interface PagedViewViewController : UIViewController
+
+@property (nonatomic, retain) IBOutlet RTSPagedView *pagedView;
 
 @end

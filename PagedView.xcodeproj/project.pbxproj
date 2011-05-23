@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		550D4043138A68EF005F5F30 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 550D4042138A68EE005F5F30 /* JSONKit.m */; };
+		550D4047138A7277005F5F30 /* DTLazyImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 550D4046138A7277005F5F30 /* DTLazyImageView.m */; };
 		55D33A621389C50900245167 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D33A611389C50900245167 /* UIKit.framework */; };
 		55D33A641389C50900245167 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D33A631389C50900245167 /* Foundation.framework */; };
 		55D33A661389C50900245167 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D33A651389C50900245167 /* CoreGraphics.framework */; };
@@ -16,9 +18,14 @@
 		55D33A751389C50900245167 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55D33A731389C50900245167 /* MainWindow.xib */; };
 		55D33A781389C50900245167 /* PagedViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D33A771389C50900245167 /* PagedViewViewController.m */; };
 		55D33A7B1389C50900245167 /* PagedViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55D33A791389C50900245167 /* PagedViewViewController.xib */; };
+		55D33A8B1389C58500245167 /* RTSPagedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D33A8A1389C58500245167 /* RTSPagedView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		550D4041138A68EE005F5F30 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		550D4042138A68EE005F5F30 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		550D4045138A7277005F5F30 /* DTLazyImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTLazyImageView.h; sourceTree = "<group>"; };
+		550D4046138A7277005F5F30 /* DTLazyImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTLazyImageView.m; sourceTree = "<group>"; };
 		55D33A5D1389C50900245167 /* PagedView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagedView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D33A611389C50900245167 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55D33A631389C50900245167 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -33,6 +40,8 @@
 		55D33A761389C50900245167 /* PagedViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagedViewViewController.h; sourceTree = "<group>"; };
 		55D33A771389C50900245167 /* PagedViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagedViewViewController.m; sourceTree = "<group>"; };
 		55D33A7A1389C50900245167 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PagedViewViewController.xib; sourceTree = "<group>"; };
+		55D33A891389C58500245167 /* RTSPagedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTSPagedView.h; sourceTree = "<group>"; };
+		55D33A8A1389C58500245167 /* RTSPagedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTSPagedView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,12 @@
 			children = (
 				55D33A701389C50900245167 /* PagedViewAppDelegate.h */,
 				55D33A711389C50900245167 /* PagedViewAppDelegate.m */,
+				55D33A891389C58500245167 /* RTSPagedView.h */,
+				55D33A8A1389C58500245167 /* RTSPagedView.m */,
+				550D4041138A68EE005F5F30 /* JSONKit.h */,
+				550D4042138A68EE005F5F30 /* JSONKit.m */,
+				550D4045138A7277005F5F30 /* DTLazyImageView.h */,
+				550D4046138A7277005F5F30 /* DTLazyImageView.m */,
 				55D33A731389C50900245167 /* MainWindow.xib */,
 				55D33A761389C50900245167 /* PagedViewViewController.h */,
 				55D33A771389C50900245167 /* PagedViewViewController.m */,
@@ -167,6 +182,9 @@
 				55D33A6F1389C50900245167 /* main.m in Sources */,
 				55D33A721389C50900245167 /* PagedViewAppDelegate.m in Sources */,
 				55D33A781389C50900245167 /* PagedViewViewController.m in Sources */,
+				55D33A8B1389C58500245167 /* RTSPagedView.m in Sources */,
+				550D4043138A68EF005F5F30 /* JSONKit.m in Sources */,
+				550D4047138A7277005F5F30 /* DTLazyImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +299,7 @@
 				55D33A801389C50900245167 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
