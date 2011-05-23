@@ -11,4 +11,4 @@ Views are queued internally by `RTSPagedView`, and identified by their `tag` pro
 
     - (UIView *)dequeueReusableViewWithTag:(NSInteger)tag; 
 
-RTSPagedView is licensed under the terms of the FreeBSD license. Copyright 2011, Rits Plasman.
+RTSPagedView is licensed under the terms of the FreeBSD license. Copyright 2011 Rits Plasman.
