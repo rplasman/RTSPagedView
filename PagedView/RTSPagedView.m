@@ -117,6 +117,7 @@
 	self.pagingEnabled = YES;
 	self.showsHorizontalScrollIndicator = NO;
 	self.showsVerticalScrollIndicator = NO;
+	self.alwaysBounceHorizontal = YES;
 	
 	_views = [[NSMutableArray alloc] init];
 	_queues = [[NSMutableDictionary alloc] init];
