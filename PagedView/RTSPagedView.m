@@ -348,6 +348,11 @@
 	}
 }
 
+- (NSUInteger)indexForView:(UIView *)view
+{
+	return [_views indexOfObject:view];
+}
+
 #pragma mark - Scrolling behavior
 
 - (void)correctContentOffset

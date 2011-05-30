@@ -45,6 +45,7 @@
 - (UIView *)viewForPageAtIndex:(NSUInteger)index;
 - (void)scrollToPageAtIndex:(NSUInteger)index animated:(BOOL)animated;
 - (void)reloadData;
+- (NSUInteger)indexForView:(UIView *)view;
 
 @end
 
