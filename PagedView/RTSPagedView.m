@@ -287,6 +287,13 @@
 					continue;
 				}
 			}
+			
+			// Always position view at first page when there's only one page
+			if (_continuous && _numberOfPages == 1) {
+				view.center = [self centerForViewForPageAtIndex:0];
+				continue;
+			}
+			
 			view.center = [self centerForViewForPageAtIndex:i];
 			continue;
 		}
@@ -309,7 +316,7 @@
 		_numberOfPages = [self.delegate numberOfPagesInPagedView:self];
 		_numberOfActualPages = _numberOfPages;
 		
-		if (_continuous) {
+		if (_continuous && _numberOfPages > 1) {
 			_numberOfActualPages++;
 		}
 		
@@ -329,6 +336,11 @@
 		otherVisiblePage = actualPage + 1;
 	} else {
 		otherVisiblePage = actualPage - 1;
+	}
+	
+	// If there's only one page, never change page
+	if (_numberOfPages == 1) {
+		actualPage = 0;
 	}
 	
 	// If page hasn't changed, nothing to do
@@ -375,8 +387,8 @@
 
 - (void)correctContentOffset
 {
-	// Correct content offset for continuous scrolling
-	if (_continuous) {
+	// Correct content offset for continuous scrolling with multiple pages
+	if (_continuous && _numberOfPages > 1) {
 		if (self.contentOffset.x >= _numberOfPages * self.bounds.size.width) {
 			self.contentOffset = CGPointMake(self.contentOffset.x - (_numberOfPages * self.bounds.size.width), 0.0);
 		} else if (self.contentOffset.x < 0.0) {
