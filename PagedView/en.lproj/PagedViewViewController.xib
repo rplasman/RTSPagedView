@@ -43,11 +43,10 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<object class="IBUIView" id="715770351">
 						<reference key="NSNextResponder" ref="766721923"/>
-						<int key="NSvFlags">319</int>
+						<int key="NSvFlags">256</int>
 						<string key="NSFrame">{{312, 118}, {400, 512}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MCAwAA</bytes>

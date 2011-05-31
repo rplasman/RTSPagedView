@@ -63,6 +63,7 @@
 	
 	// Endless scrolling
 	_pagedView.continuous = YES;
+	_pagedView.clipsToBounds = YES;
 	
 	// Load Flickr feed
 	self.receivedData = [NSMutableData data];

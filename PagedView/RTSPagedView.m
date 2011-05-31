@@ -38,6 +38,7 @@
 @property (nonatomic, retain) NSMutableDictionary *queues;
 @property (nonatomic, readonly) NSInteger actualPage;
 @property (nonatomic, readonly) NSUInteger numberOfActualPages;
+@property (nonatomic, readonly) NSUInteger otherVisiblePage;
 
 - (void)setUp;
 - (CGPoint)centerForViewForPageAtIndex:(NSInteger)index;
@@ -60,6 +61,7 @@
 @synthesize numberOfPages		= _numberOfPages;
 @synthesize continuous			= _continuous;
 @synthesize numberOfActualPages	= _numberOfActualPages;
+@synthesize otherVisiblePage	= _otherVisiblePage;
 
 - (id <RTSPagedViewDelegate>)delegate
 {
@@ -112,6 +114,7 @@
 	_currentPage = NSNotFound;
 	_numberOfPages = NSNotFound;
 	_numberOfActualPages = NSNotFound;
+	_otherVisiblePage = NSNotFound;
 	
 	// Set default scrollview properties
 	self.pagingEnabled = YES;
@@ -278,6 +281,12 @@
 		
 		// This view is already visible, reposition it and continue
 		if ([view isKindOfClass:[UIView class]]) {
+			if (_continuous && _numberOfPages == 2) {
+				if (i != _actualPage) {
+					view.center = [self centerForViewForPageAtIndex:_otherVisiblePage];
+					continue;
+				}
+			}
 			view.center = [self centerForViewForPageAtIndex:i];
 			continue;
 		}
@@ -285,6 +294,9 @@
 		// Get view for this page
 		view = [self.delegate pagedView:self viewForPageAtIndex:index];
 		view.center = [self centerForViewForPageAtIndex:i];
+		if (_continuous && _numberOfPages == 2 && i != _actualPage) {
+			view.center = [self centerForViewForPageAtIndex:_otherVisiblePage];
+		}
 		[_views replaceObjectAtIndex:index withObject:view];
 		[self addSubview:view];
 	}
@@ -292,7 +304,6 @@
 
 - (void)layoutSubviews
 {
-	
 	if (_numberOfPages == NSNotFound) {
 		// This is executed only once
 		_numberOfPages = [self.delegate numberOfPagesInPagedView:self];
@@ -313,13 +324,20 @@
 	[self correctContentOffset];
 	
 	NSInteger actualPage = round(self.contentOffset.x / self.bounds.size.width);
+	NSInteger otherVisiblePage;
+	if (actualPage == floor(self.contentOffset.x / self.bounds.size.width)) {
+		otherVisiblePage = actualPage + 1;
+	} else {
+		otherVisiblePage = actualPage - 1;
+	}
 	
 	// If page hasn't changed, nothing to do
-	if (_actualPage == actualPage) {
+	if (_actualPage == actualPage && _otherVisiblePage == otherVisiblePage) {
 		return;
 	}
 	
 	_actualPage = actualPage;
+	_otherVisiblePage = otherVisiblePage;
 	
 	// Calculate current page when continuous scrolling is enabled
 	NSInteger currentPage = actualPage;
