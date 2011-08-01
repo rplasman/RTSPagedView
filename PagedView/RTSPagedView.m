@@ -147,6 +147,19 @@
 	[self setNeedsLayout];
 }
 
+- (void)reloadPageAtIndex:(NSUInteger)index
+{
+	NSMutableArray *views = self.views;
+	UIView *previousView = [views objectAtIndex:index];
+	CGPoint previousCenter = previousView.center;
+	[previousView removeFromSuperview];
+	
+	UIView *view = [self.delegate pagedView:self viewForPageAtIndex:index];
+	[views replaceObjectAtIndex:index withObject:view];
+	view.center = previousCenter;
+	[self addSubview:view];
+}
+
 - (void)dealloc
 {
 	[_views release];
